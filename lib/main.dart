@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'Screens/Quotes_Screen.dart';
 import 'Screens/author_screen.dart';
+import 'Screens/favourite_screen.dart';
 import 'Screens/home_screen.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -58,6 +59,7 @@ void main()async{
         'category' : (context) => CategoryScreen(),
         'author' : (context) => AuthorScreen(),
         'Quotes' : (context) => QuotesScreen(),
+        'favourite' : (context) => FavouriteScreen(),
       },
     ),
   );

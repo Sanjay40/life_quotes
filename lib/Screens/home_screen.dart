@@ -44,13 +44,18 @@ class _HomeScreenState extends State<HomeScreen> {
           fontWeight: FontWeight.w600
         ),
         ),
-        actions: const [
+        actions: [
           Icon(Icons.notifications_active,
           color: Colors.yellow,
           ),
           SizedBox(width: 10,),
-          Icon(Icons.favorite,
-          color: Colors.red,
+          GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, 'favourite');
+            },
+            child: Icon(Icons.favorite,
+            color: Colors.red,
+            ),
           ),
           SizedBox(width: 5,),
         ],
@@ -127,18 +132,23 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           SizedBox(height: 30,),
-                          Row(
-                            children: [
-                              Icon(Icons.star,color: Colors.yellow,),
-                              const SizedBox(width: 10,),
-                              Text("Favourite",
-                                style: GoogleFonts.poppins(
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 12,
-                                    letterSpacing: 0.5
-                                ),
-                              )
-                            ],
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.pushNamed(context,  'favourite');
+                            },
+                            child: Row(
+                              children: [
+                                Icon(Icons.star,color: Colors.yellow,),
+                                const SizedBox(width: 10,),
+                                Text("Favourite",
+                                  style: GoogleFonts.poppins(
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 12,
+                                      letterSpacing: 0.5
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           SizedBox(height: 30,),
                           Row(

@@ -1,9 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sqflite/sqflite.dart';
 
 List<Map<String,dynamic>> list = [];
 List<Map<String,dynamic>> uniqueList = [];
- int imgChangeNum = 0;
+  int imgChangeNum = 0;
+int? favouriteNum;
+
+List favourite = [];
+// Future<int> updateStatic(
+//     {Map<String, dynamic>? row, String? table, String? id}) async {
+//   Database? db = await database;
+//   return await db!
+//       .update(table!, row!, where: '$columnId = ?', whereArgs: [id]);
+// }
+
+
 // class Variable{
 //   static List<Map<String,dynamic>> drawer = [
 //     {
