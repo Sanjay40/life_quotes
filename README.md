@@ -18,7 +18,7 @@ A new Flutter project.
 <tr>
     <td><img src="images/s6.png" </td>
     <td><img src="images/s7.png" </td>
-    <td><img src="images/S8.png" </td>
+    <td><img src="images/s8.png" </td>
 </tr>
 <tr>
     <td><img src="images/s9.png" </td>
