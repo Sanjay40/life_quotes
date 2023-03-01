@@ -4,8 +4,6 @@ A new Flutter project.
 
 <table>
 <tr>
-</tr>
-<tr>
     <td><img src="images/s1.1.png" </td>
     <td><img src="images/s1.2.png" </td>
     <td><img src="images/s2.png" </td>
